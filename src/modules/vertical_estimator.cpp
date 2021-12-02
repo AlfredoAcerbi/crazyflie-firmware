@@ -1,5 +1,5 @@
 #include "vertical_estimator.h"
-// Class constructor
+// Class constructor hfy
 VerticalEstimator::VerticalEstimator() : range(E_SDA , E_SCL)
 {
 
