@@ -1,6 +1,6 @@
-# include "mbed.h"
-# include "crazyflie.h"
-# include "USBSerial.h"
+#include "mbed.h"
+#include "crazyflie.h"
+#include "USBSerial.h"
 // USB serial object
 USBSerial serial ;
 // Crazyflie controller objects
@@ -20,7 +20,7 @@ int main()
     att_est.init();
     ver_est.init();
     // Initialize interrupts
-    tic.attach(& callback , dt);
+    tic.attach(&callback , dt);
     tic_range.attach(&callback_range , dt_range);
     while(true)
     {
@@ -32,7 +32,7 @@ int main()
             if(flag_range)
             {
                 flag_range = false ;
-                ver_est.correct ( att_est.phi , att_est.theta );
+                ver_est.correct (att_est.phi , att_est.theta );
                 serial.printf ("z [m]:%6.2f | w [m/s]:%6.2f \n", ver_est.z, ver_est.w);
             }
         }

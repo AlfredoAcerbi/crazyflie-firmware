@@ -38,25 +38,26 @@ const float kp_psi = 60.07;
 const float kd_psi = 13.33;
 
 //lab 9
-const float dt_2 = 1/20; //20hz
-const float wc_2 = 10;
-const float zeta = sqrt(2) / 2;
+const float dt_2 = 1.0/20.0; //20hz
+const float wc_2 = 10.0;
+const float zeta = sqrt(2) / 2.0;
 const float l1 =  wc_2*wc_2;
-const float l2 = 2*zeta*wc_2;
+const float l2 = 2.0*zeta*wc_2;
 
-const float dt_range = 1/20;
+const float dt_range = 1.0/20.0;
 
 //lab 10
 //formulas na aula 8 c OS de 0.005 e TS de 2
-const float kd_lab10 = 4 ;
+//zeta=0.86; wn = 2.33; 
+const float kd_lab10 = 4.0;
 const float kp_lab10 = 5.4083;
 
 //lab 11
-const float radiano = 84*pi/360;
-const float sigma = (2*tan(radiano/2))/(420*dt);
+const float radiano = 84*pi/360.0;
+const float sigma = (2*tan(radiano/2.0))/(420*dt);
 
 //lab 12
-const float kd_lab12 = 4;
+const float kd_lab12 = 4.0;
 const float kp_lab12 = 5.4083;
 
 
