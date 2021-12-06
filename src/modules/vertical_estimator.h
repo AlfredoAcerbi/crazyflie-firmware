@@ -18,7 +18,7 @@ void correct(float phi , float theta);
 float z, w;
 private:
 // Range sensor object
-VL53L0X range;
-// VL53L1X range ;
+// VL53L0X range;
+VL53L1X range ;
 };
 #endif

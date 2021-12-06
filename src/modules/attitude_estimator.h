@@ -18,10 +18,10 @@ float phi , theta , psi ;
 float p, q, r;
 private:
 // IMU sensor object
-MPU9250 imu ;
+// MPU9250 imu ;
 float pbias;
 float qbias;
 float rbias;
-// BMI088 imu ;
+BMI088 imu ;
 };
 # endif
